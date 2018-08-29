@@ -8,6 +8,7 @@ LFALCON=-lfalcon
 all:
 	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test1.cpp $(LFALCON) -o test1.o
 	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test2.cpp $(LFALCON) -o test2.o
+	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test3.cpp $(LFALCON) -o test3.o
 
 clean:
 	 rm $(EXEC).o
