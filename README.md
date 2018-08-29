@@ -1,3 +1,3 @@
 # falcon
 
-A library of frequently used c++ functions for use in other pieces of code.
+A library of frequently used c++ functions and algorithms.
