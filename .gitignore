@@ -5,3 +5,4 @@ test/*.o
 
 # Ignore Mac specific files
 .DS_Store
+.idea/*
