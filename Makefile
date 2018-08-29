@@ -3,11 +3,17 @@ CFLAGS=-c -fPIC
 
 all: lib/libfalcon.a
 
-lib/libfalcon.a: src/hello.o
-	 ar cr lib/libfalcon.a src/hello.o
+lib/libfalcon.a: src/indexing.o src/randoms.o src/sort.o
+	 ar cr lib/libfalcon.a src/indexing.o src/randoms.o src/sort.o
 
-src/hello.o: src/hello.cpp
-	 $(CC) $(CFLAGS) src/hello.cpp -o src/hello.o
+src/indexing.o: src/indexing.cpp
+	 $(CC) $(CFLAGS) src/indexing.cpp -o src/indexing.o
+
+src/randoms.o: src/randoms.cpp
+	 $(CC) $(CFLAGS) src/randoms.cpp -o src/randoms.o
+
+src/sort.o: src/sort.cpp
+	 $(CC) $(CFLAGS) src/sort.cpp -o src/sort.o
 
 clean:
 	 rm src/*.o

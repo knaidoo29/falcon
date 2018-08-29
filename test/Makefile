@@ -5,10 +5,9 @@ FALCON_LIB=$(FALCON_ROOT)/lib
 FALCON_INC=$(FALCON_ROOT)/include
 LFALCON=-lfalcon
 
-EXEC=main
-
 all:
-	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test1.cpp $(LFALCON) -o $(EXEC).o
+	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test1.cpp $(LFALCON) -o test1.o
+	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test2.cpp $(LFALCON) -o test2.o
 
 clean:
 	 rm $(EXEC).o

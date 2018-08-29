@@ -1,5 +1,11 @@
-//  general type print function
+// indexing functions
+#include "indexing.h"
+
+// general type print function
 #include "print.h"
 
-void helloworld();
-void print_integers(int i);
+// merge sort algorithm
+#include "sort.h"
+
+// generates randoms.
+#include "randoms.h"
