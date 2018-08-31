@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void read_asci_table(string filename, int rows, int columns, int array[]){
+void read_ascii_table(string filename, int rows, int columns, int array[]){
 
     string line;
     int i = 0;
@@ -31,7 +31,7 @@ void read_asci_table(string filename, int rows, int columns, int array[]){
     }
 }
 
-void read_asci_table(string filename, int rows, int columns, float array[]){
+void read_ascii_table(string filename, int rows, int columns, float array[]){
 
     string line;
     int i = 0;
@@ -56,7 +56,7 @@ void read_asci_table(string filename, int rows, int columns, float array[]){
 }
 
 
-void read_asci_table(string filename, int rows, int columns, double array[]){
+void read_ascii_table(string filename, int rows, int columns, double array[]){
 
     string line;
     int i = 0;
@@ -80,7 +80,7 @@ void read_asci_table(string filename, int rows, int columns, double array[]){
     }
 }
 
-int read_asci_table(string filename, vector<int> &array){
+int read_ascii_table(string filename, vector<int> &array){
 
     string line;
     int count_col, count_rows;
@@ -114,7 +114,7 @@ int read_asci_table(string filename, vector<int> &array){
     return count_rows;
 }
 
-int read_asci_table(string filename, vector<float> &array){
+int read_ascii_table(string filename, vector<float> &array){
 
     string line;
     int count_col, count_rows;
@@ -148,7 +148,7 @@ int read_asci_table(string filename, vector<float> &array){
     return count_rows;
 }
 
-int read_asci_table(string filename, vector<double> &array){
+int read_ascii_table(string filename, vector<double> &array){
 
     string line;
     int count_col, count_rows;

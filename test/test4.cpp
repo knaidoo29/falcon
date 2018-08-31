@@ -34,7 +34,7 @@ int main(){
 
   int rows, columns;
 
-  rows = read_asci_table(filename, array);
+  rows = read_ascii_table(filename, array);
   columns = array.size()/rows;
 
   print_vector(array, true);
