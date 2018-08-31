@@ -19,7 +19,7 @@ int main(){
     arrd[i] = 0.999 + (double) i;
   }
 
-  print_array(arri, size, true);
+  print_array(arri, size);
   print_array(arrf, size, true);
   print_array(arrd, size, true);
 

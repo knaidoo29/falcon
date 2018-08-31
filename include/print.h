@@ -4,7 +4,7 @@
 using namespace std;
 
 template<typename TYPE>
-void print_array(TYPE array[], int size, bool list){
+void print_array(TYPE array[], int size, bool list=true){
     // Prints the array.
     cout << "\n";
     for (int i = 0; i < size; i++)
@@ -26,7 +26,7 @@ void print_array(TYPE array[], int size, bool list){
 }
 
 template<class TYPE>
-void print_vector(vector<TYPE> &array, bool list){
+void print_vector(vector<TYPE> &array, bool list=true){
     // Prints the array.
     cout << "\n";
     for (int i = 0; i < array.size(); i++)
