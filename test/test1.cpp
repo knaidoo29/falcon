@@ -55,8 +55,8 @@ int main(){
 
   cout << "\nTest 'print_vector' function for types float, double" << endl;
 
-  print_vector(rands_fv, size, true);
-  print_vector(rands_dv, size, true);
+  print_vector(rands_fv, true);
+  print_vector(rands_dv, true);
 
   cout << "--> Done." << endl;
 

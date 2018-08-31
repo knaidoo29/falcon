@@ -1,15 +1,22 @@
-CC=g++
+CC = g++
 
-FALCON_ROOT=/Users/krishna/Research/github/falcon
-FALCON_LIB=$(FALCON_ROOT)/lib
-FALCON_INC=$(FALCON_ROOT)/include
-LFALCON=-lfalcon
+OPTIMIZE = -g
 
-all:
-	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test1.cpp $(LFALCON) -o test1.o
-	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test2.cpp $(LFALCON) -o test2.o
-	g++ -I$(FALCON_INC) -L$(FALCON_LIB) test3.cpp $(LFALCON) -o test3.o
+FALCON_INC = -I/Users/krishna/Research/github/falcon/include
+FALCON_LIB = -L/Users/krishna/Research/github/falcon/lib -lfalcon
+
+INC = $(FALCON_INC)
+LIBS = -lm $(FALCON_LIB)
+CFLAGS = $(OPTIMIZE)
+
+OBJS = test1.o test2.o test3.o test4.o
+
+all: $(OBJS)
+
+.cpp.o:
+	$(CC) $(CFLAGS) $(INC) $< $(LIBS) -o $@
 
 clean:
-	 rm $(EXEC).o
-	 rm .DS_Store
+	rm -r *.o*
+	rm -r *.txt
+	rm .DS_Store

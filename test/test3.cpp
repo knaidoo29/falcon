@@ -33,7 +33,7 @@ int main(){
 
   cout << "long long int :" << endl;
 
-  long long int l3 = 1000000;
+  long long int l3 = 1000000000;
 
   for(long long int i3 = 0; i3 < l3; i3++){
     progress_bar(i3, l3, false);

@@ -54,13 +54,13 @@ int main(){
 
   cout << "\nVECTOR Float randoms:" << endl;
 
-  print_vector(rands_fv, size, true);
+  print_vector(rands_fv, true);
 
   merge_sort(rands_fv, rands_fv_ind, size);
 
   cout << "\nAfter merge sort:" << endl;
 
-  print_vector(rands_fv, size, true);
+  print_vector(rands_fv, true);
 
   vector<int>rands_dv_ind;
   vector<double>rands_dv;
@@ -73,13 +73,13 @@ int main(){
 
   cout << "\nVECTOR Double randoms:" << endl;
 
-  print_vector(rands_dv, size, true);
+  print_vector(rands_dv, true);
 
   merge_sort(rands_dv, rands_dv_ind, size);
 
   cout << "\nAfter merge sort:" << endl;
 
-  print_vector(rands_dv, size, true);
+  print_vector(rands_dv, true);
 
   return 0;
 }

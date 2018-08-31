@@ -3,7 +3,7 @@
 
 using namespace std;
 
-template<class TYPE>
+template<typename TYPE>
 void print_array(TYPE array[], int size, bool list){
     // Prints the array.
     cout << "\n";
@@ -26,14 +26,14 @@ void print_array(TYPE array[], int size, bool list){
 }
 
 template<class TYPE>
-void print_vector(vector<TYPE> &array, int size, bool list){
+void print_vector(vector<TYPE> &array, bool list){
     // Prints the array.
     cout << "\n";
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < array.size(); i++)
     {
         if(list == true) {
             // Prints as a list.
-            if(i < size-1) {
+            if(i < array.size()-1) {
                 cout << array[i] << ", ";
             }
             else{

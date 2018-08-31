@@ -4,7 +4,7 @@ using namespace std;
 
 template<class TYPE>
 void progress_bar(TYPE i, TYPE size, bool include_index){
-    TYPE bar_length = 20;
+    TYPE bar_length = 50;
     double j, sizej;
     if(i != 0){
       if((bar_length*i)/size != (bar_length*(i+1))/size or i==size){

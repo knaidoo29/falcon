@@ -10,5 +10,8 @@
 // generates randoms.
 #include "randoms.h"
 
+// file reading functions.
+#include "read.h"
+
 // utility functions.
 #include "utility.h"
