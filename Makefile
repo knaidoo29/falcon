@@ -4,7 +4,7 @@ CFLAGS = -c -fPIC -Wall
 INC =
 LIBS =
 
-OBJS = src/indexing.o src/indexing.o src/randoms.o src/sort.o
+OBJS = src/indexing.o src/randoms.o src/sort.o
 
 all: lib/libfalcon.a
 

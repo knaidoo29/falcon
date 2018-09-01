@@ -3,7 +3,7 @@
 using namespace std;
 
 template<class TYPE>
-void progress_bar(TYPE i, TYPE size, bool include_index){
+void progress_bar(TYPE i, TYPE size, bool include_index = false){
     TYPE bar_length = 50;
     double j, sizej;
     if(i != 0){
