@@ -1,10 +1,10 @@
 CC = g++
-CFLAGS = -c -fPIC -Wall
+CFLAGS = -c
 
 INC =
 LIBS =
 
-OBJS = src/indexing.o src/randoms.o src/sort.o
+OBJS = src/indexing.o src/randoms.o src/sort.o src/read.o src/write.o
 
 all: lib/libfalcon.a
 
