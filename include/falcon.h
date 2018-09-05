@@ -1,6 +1,9 @@
 // indexing functions
 #include "indexing.h"
 
+// N-body functions
+#include "nbody.h"
+
 // general type print function
 #include "print.h"
 

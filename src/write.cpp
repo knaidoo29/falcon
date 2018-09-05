@@ -97,3 +97,29 @@ void Writer::redistribute(string conversion){
     data_float.erase(data_float.begin(), data_float.begin()+data_float.size());
   }
 }
+
+void Writer::clean(){
+  if(data_int.size() != 0){
+    data_int.erase(data_int.begin(), data_int.begin()+data_int.size());
+  }
+  if(data_float.size() != 0){
+    data_float.erase(data_float.begin(), data_float.begin()+data_float.size());
+  }
+  if(data_double.size() != 0){
+    data_double.erase(data_double.begin(), data_double.begin()+data_double.size());
+  }
+  if(structure.size() != 0){
+    structure.erase(structure.begin(), structure.begin()+structure.size());
+  }
+  if(header.size() != 0){
+    header.erase(header.begin(), header.begin()+header.size());
+  }
+  if(explanation.size() != 0){
+    explanation.erase(explanation.begin(), explanation.begin()+explanation.size());
+  }
+  if(types.size() != 0){
+    types.erase(types.begin(), types.begin()+types.size());
+  }
+
+  store_as = "undefined";
+}

@@ -16,6 +16,7 @@ class Writer{
     void store(vector<TYPE> &array, int size, string description, string store_type="float");
     void add2header(string exp);
     void write2file(string filename);
+    void clean();
   private:
     vector<int> data_int;
     vector<float> data_float;

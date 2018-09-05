@@ -42,9 +42,9 @@ template<typename TYPE>
 int read_ascii_table(string filename, vector<TYPE> &array, bool printout=true){
 
     string line;
-    int count_col, count_rows;
+    int count_col, count_row;
     count_col = 0;
-    count_rows = 0;
+    count_row = 0;
 
     ifstream _file (filename);
     if(printout == true){
@@ -58,16 +58,16 @@ int read_ascii_table(string filename, vector<TYPE> &array, bool printout=true){
           TYPE temp_float;
           while(str2float >> temp_float){
             array.push_back(temp_float);
-            if(count_col == 0){
-              count_rows++;
+            if(count_row == 0){
+              count_col++;
             }
           }
-          count_col++;
+          count_row++;
         }
       }
       if(printout == true){
         cout << "---> Number of columns = " << count_col << endl;
-        cout << "---> Number of rows = " << count_rows << endl;
+        cout << "---> Number of rows = " << count_row << endl;
       }
       _file.close();
     }
@@ -76,7 +76,15 @@ int read_ascii_table(string filename, vector<TYPE> &array, bool printout=true){
         cout << "Unable to open file " << filename << endl;
       }
     }
-    return count_rows;
+    return count_col;
+}
+
+
+template<typename TYPE>
+void extract_from_table(vector<TYPE> &table, int col, int total_col, vector<TYPE> &array){
+  for(int i = 0; i < table.size()/total_col; i++){
+    array.push_back(table[i*total_col + col]);
+  }
 }
 
 class Reader{
